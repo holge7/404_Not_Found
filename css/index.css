@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bebas, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../media/Bebas-Regular.otf");
+  }
+
+#wrapper{
+    background-color: rgb(249, 239, 238);
+    text-align: center;
+    height: 100vh;
+}
+/*#wrapper>*{
+    border: 2px solid red;
+}*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* IMAGEN */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#ovni{
+    margin-top: 10%;
+    margin-bottom: -5rem;
+}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* 404 */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#numero{
+    margin-top: -5.5rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(134, 158, 221);
+    align-items: flex-end;
+    overflow: hidden;
+}
+#numero{
+    font-size: 8rem;
+    font-weight: bold;
+}
+#numero>p{
+    padding: 0 2rem;
+}
+.numero__0{
+    /* agiteo, subida, */
+    animation: 
+    animacionOvni1 linear 10s, 
+    animacionOvni cubic-bezier(0, 1.35, 1,-0.15) 10s 4s,
+    animacionOpacidad linear 10s 11.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes animacionOvni1 {
+    0%{
+        transform: translateX(.1rem);
+    }
+    2%{
+        transform: translateX(-.1rem);
+    }
+    4%{
+        transform: translateX(.1rem);
+    }
+    6%{
+        transform: translateX(-.1rem);
+    }
+    8%{
+        transform: translateX(.1rem);
+    }
+    10%{
+        transform: translateX(-.1rem);
+    }
+    12%{
+        transform: translateX(.1rem);
+    }
+    14%{
+        transform: translateX(-.1rem);
+    }
+    16%{
+        transform: translateX(.1rem);
+    }
+    18%{
+        transform: translateX(-.1rem);
+    }
+    20%{
+        transform: translateX(.1rem);
+    }
+    22%{
+        transform: translateX(-.1rem);
+    }
+    24%{
+        transform: translateX(.1rem);
+    }
+    26%{
+        transform: translateX(-.1rem);
+    }
+    28%{
+        transform: translateX(.1rem);
+    }
+    30%{
+        transform: translateX(-.1rem);
+    }
+    32%{
+        transform: translateX(.1rem);
+    }
+    34%{
+        transform: translateX(-.1rem);
+    }
+    36%{
+        transform: translateX(.1rem);
+    }
+    38%{
+        transform: translateX(-.1rem);
+    }
+    40%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}
+@keyframes animacionOvni {
+    25%{
+        transform: rotateZ(30deg) translateY(-12rem) translateX(-6.4rem) scale(0.5);
+    }
+    75%{
+        transform: rotateZ(30deg) translateY(-12rem) translateX(-6.4rem) scale(0.2);
+        opacity: 1;
+    }
+    75.1%{
+        transform: rotateZ(0) translateY(0) translateX(0) scale(1);
+    }
+
+    
+}
+@keyframes animacionOpacidad {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* TEXTO */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#texto{
+    font-size: 5rem;
+    margin-top: 1rem;
+    color: rgb(134, 158, 221);
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* BOTON */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#boton{
+    margin-top: 3rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 100rem;
+    background-color: rgb(134, 158, 221);
+    color: rgb(249, 239, 238);
+    font-size: 1.5rem;
+    border: none;
+}
+#boton:focus{
+    border: none;
+}
+#boton:active{
+    border: .2rem solid rgb(134, 158, 221);
+    color: rgb(134, 158, 221);
+    background-color: rgb(249, 239, 238);
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* LUNA */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#luna{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 2rem .5rem 0 rgb(134, 158, 221);
+    position: absolute;
+    top: 3rem;
+    right: 15%;
+}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/* RESPONSIVE */
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+
+@media(max-width: 1160px){
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* LUNA */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #luna{
+        width: 4rem;
+        height: 4rem;
+        box-shadow: 1.2rem .5rem 0 rgb(134, 158, 221);
+        right: 10%;
+    }
+}
+@media(max-width: 830px){
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* IMAGEN */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #ovni{
+        margin-top: 13%;
+    }
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* LUNA */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #luna{
+        top: 1.5rem;
+    }
+}
