@@ -38,8 +38,6 @@
     color: rgb(134, 158, 221);
     align-items: flex-end;
     overflow: hidden;
-}
-#numero{
     font-size: 8rem;
     font-weight: bold;
 }
@@ -218,6 +216,39 @@
     /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     #ovni{
         margin-top: 13%;
+        width: 10rem;
+    }
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* 404 */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #numero{
+        margin-top: -2.5rem;
+        height: 12rem;
+        font-size: 6rem;
+    }
+
+    @keyframes animacionOvni {
+        25%{
+            transform: rotateZ(30deg) translateY(-10rem) translateX(-5.2rem) scale(0.5);
+        }
+        75%{
+            transform: rotateZ(30deg) translateY(-10rem) translateX(-5.2rem) scale(0.2);
+            opacity: 1;
+        }
+        75.1%{
+            transform: rotateZ(0) translateY(0) translateX(0) scale(1);
+        }
+    
+        
+    }
+
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* TEXTO */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #texto{
+        font-size: 4rem;
+        margin-top: 1rem;
+        color: rgb(134, 158, 221);
     }
 
     /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -225,5 +256,41 @@
     /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
     #luna{
         top: 1.5rem;
+    }
+}
+@media(max-width: 560px){
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* IMAGEN */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #ovni{
+        margin-top: 20%;
+    }
+    
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* TEXTO */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #texto{
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: rgb(134, 158, 221);
+    }
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* BOTON */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #boton{
+        margin-top: 3rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 1.2rem;
+        border: none;
+    }
+    /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    /* LUNA */
+    /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+    #luna{
+        top: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: .8rem .2rem 0 rgb(134, 158, 221);
     }
 }
